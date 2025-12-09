@@ -1,0 +1,22 @@
+
+:root{--bg:#fff;--text:#1f2937;--muted:#6b7280;--border:#e5e7eb;--accent:#7c3aed}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple Color Emoji','Segoe UI Emoji';color:var(--text);background:var(--bg);line-height:1.6}
+.header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--border)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px}
+.brand{display:flex;align-items:center;gap:12px}.brand .name{font-weight:700}.brand .title{color:var(--muted);font-size:.95rem}
+.mainnav{display:flex;flex-wrap:wrap;gap:6px}.mainnav a{display:inline-block;padding:8px 12px;border-radius:6px;color:var(--text);text-decoration:none;font-weight:500}.mainnav a:hover{background:#f5f3ff;color:var(--accent)}
+.container{display:grid;grid-template-columns:280px 1fr;min-height:calc(100vh - 60px)}
+.sidebar{border-right:1px solid var(--border);padding:24px;align-self:start;height:auto}
+.sidebar .name{font-size:1.25rem;font-weight:700;margin:8px 0 2px}
+.sidebar .title{color:var(--muted);font-size:.95rem}
+.sidebar img{width:100%;border-radius:8px;border:1px solid var(--border)}
+.sidebar .contact{margin-top:12px;font-size:.95rem}.sidebar .contact a{color:var(--accent);text-decoration:none}
+.main{padding:32px}
+section{padding-bottom:32px;border-bottom:1px solid var(--border);margin-bottom:32px}section:last-of-type{border-bottom:none}
+h1{font-size:2rem;margin:0 0 16px}h2{font-size:1.4rem;margin:0 0 12px}
+.tag{display:inline-block;border:1px solid var(--border);color:var(--muted);padding:4px 8px;border-radius:999px;margin:4px 6px 0 0;font-size:.85rem}
+ul{margin:8px 0 0 22px}li{margin-bottom:8px}.meta{color:var(--muted);font-size:.95rem}
+.footer{color:var(--muted);font-size:.9rem;text-align:center;padding:24px;border-top:1px solid var(--border)}
+a{color:var(--accent)}
+@media(max-width:900px){.container{grid-template-columns:1fr}.sidebar{border-right:0;border-bottom:1px solid var(--border)}}
