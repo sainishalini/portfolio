@@ -28,6 +28,16 @@ ul{margin:8px 0 0 22px}
 li{margin-bottom:8px}
 .tag{display:inline-block;border:1px solid var(--border);color:var(--muted);padding:4px 8px;border-radius:999px;margin:4px 6px 0 0;font-size:.85rem}
 .meta{color:var(--muted);font-size:.95rem}
-.footer{color:var(--muted);font-size:.9rem;text-align:center;padding:24px;border-top:1px solid var(--border)}
+.footer1{color:var(--muted);font-size:.9rem;text-align:center;padding:24px;border-top:1px solid var(--border)}
+
+footer {
+    color: var(--muted);
+    font-size: .9rem;
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid var(--border);
+    background: #fff;         /* optional: gives a solid footer background */
+  }
+
 a{color:var(--accent)}
 @media (max-width: 900px){.container{grid-template-columns:1fr}.sidebar{border-right:none;border-bottom:1px solid var(--border)}}
